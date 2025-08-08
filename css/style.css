@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #bea574;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #bea574;
+  display: flex;
+  justify-content: center;
+}
+
+.header_content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+img {
+  width: 100px;
+}
+
+.menu_content {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* ﾊﾝﾊﾞｰｶﾞｰﾒﾆｭｰ */
+.hamburger_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  gap: 6px;
+  display: none;
+}
+
+.hamburger_line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.hamburger_content.open .hamburger_line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger_content.open .hamburger_line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger_content.open .hamburger_line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media screen and (max-width: 580px) {
+  .menu_content {
+    display: none;
+  }
+
+  .hamburger_content {
+    display: flex;
+  }
+}
