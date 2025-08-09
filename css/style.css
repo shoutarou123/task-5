@@ -15,6 +15,10 @@ body {
   min-height: 100vh;
 }
 
+#accordionMenu {
+  display: none;
+}
+
 header {
   width: 100%;
   padding: 12px 0;
@@ -102,7 +106,75 @@ img {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+.swiper {
+  width: 100%;
+  aspect-ratio: 20 / 8;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev {
+  left: 2% !important;
+}
+
+.swiper-button-next {
+  right: 2% !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev img,
+.swiper-button-next img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullet {
+  background: #bea574 !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 6px !important;
+}
+
 @media screen and (max-width: 580px) {
+  #accordionMenu {
+    background-color: #bea574;
+    position: fixed;
+    top: 69px;
+    width: 100%;
+    flex-flow: column;
+    text-align: center;
+    z-index: 10;
+  }
+
+  #accordionMenu li {
+    width: 100%;
+  }
+
+  #accordionMenu a {
+    padding: 12px 0;
+    display: block;
+    font-weight: bold;
+    border-bottom: solid 1px #fff;
+  }
+
+  #accordionMenu li:first-child {
+    border-top: solid 1px #fff;
+  }
+
   .menu_content {
     display: none;
   }
@@ -110,4 +182,6 @@ img {
   .hamburger_content {
     display: flex;
   }
+
 }
+

@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
