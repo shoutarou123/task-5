@@ -294,6 +294,14 @@ form input[type="submit"] {
   display: none;
 }
 
+.check_content {
+  background-color: aquamarine;
+  margin: 0 auto;
+  margin-top: 69px;
+  width: 800px;
+  
+}
+
 @media screen and (max-width: 950px) {
   .schedule_content {
     width: 700px;

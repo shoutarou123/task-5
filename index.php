@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>task-5</title>
+  <title>top</title>
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
@@ -64,28 +64,44 @@
       <p class="address">〒771-1154 徳島県徳島市応神町東貞方面川淵</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3303.482660016973!2d134.51900637617905!3d34.108391264762766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5ZCJ6YeO5bed5YyX5bK444K944OV44OI44Oc44O844Or5aC0!5e0!3m2!1sja!2sjp!4v1754746314560!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+      <?php session_start();
+      $name = $_POST['name'] ?? $_SESSION['form']['name'] ?? '';
+      $position = $_POST['position'] ?? $_SESSION['form']['position'] ?? '';
+      $email = $_POST['email'] ?? $_SESSION['form']['email'] ?? '';
+      $tel = $_POST['tel'] ?? $_SESSION['form']['tel'] ?? '';
+      ?>
+
       <p class="title" id="subscription_title">席予約</p>
-      <form>
+      <form method="POST" action="checkPage.php">
         <label for="name">お名前<span>*必須</span></label>
-        <input class="required_form" type="text" name="name" placeholder="例）田中 太郎" />
+        <input class="required_form" type="text" name="name" placeholder="例）田中 太郎"
+          value="<?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?>" />
 
         <label for="position">席の場所<span>*必須</span></label>
         <select class="required_form" name="position">
           <option value="">---</option>
-          <option value="SS">SS席</option>
-          <option value="S">S席</option>
-          <option value="A">A席</option>
-          <option value="B">B席</option>
-          <option value="C">C席</option>
+          <option
+            value="SS"
+            <?php if ($position === 'SS') echo 'selected'; ?>>SS席</option>
+          <option value="S"
+            <?php if ($position === 'S') echo 'selected'; ?>>S席</option>
+          <option value="A"
+            <?php if ($position === 'A') echo 'selected'; ?>>A席</option>
+          <option value="B"
+            <?php if ($position === 'B') echo 'selected'; ?>>B席</option>
+          <option value="C"
+            <?php if ($position === 'C') echo 'selected'; ?>>C席</option>
         </select>
 
         <label for="email">メールアドレス<span>*必須</span></label>
-        <input class="required_form" type="email" name="email" placeholder="例）abcd123@example.com" />
+        <input class="required_form" type="email" name="email" placeholder="例）abcd123@example.com"
+          value="<?php echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8') ?>" />
         <span class="email_message">正しいメールアドレスを入力してください</span>
 
 
         <label for="tel">電話番号<span class="optional_text">*任意</span></label>
-        <input class="tel_form" type="tel" name="tel" placeholder="例）09012345678" />
+        <input class="tel_form" type="tel" name="tel" placeholder="例）09012345678"
+          value="<?php echo htmlspecialchars($tel, ENT_QUOTES, 'UTF-8') ?>" />
         <span class="tel_message">正しい電話番号を入力してください</span>
 
         <input class="submit_button" type="submit" value="送信" disabled />
@@ -94,9 +110,7 @@
     </div>
 
   </main>
-  <footer>
-    <img src="/img/logo.png" />
-  </footer>
+  <?php include 'footer.php'; ?>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/js/index.js"></script>
