@@ -173,9 +173,10 @@ img {
 .schedule_content {
   width: 900px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
-.schedule_title {
+.title {
   font-weight: bold;
   font-size: 16px;
   text-align: center;
@@ -220,6 +221,20 @@ img {
 
 .schedule_detail {
   padding: 20px;
+}
+
+/* ----- アクセス ----- */
+.address {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+iframe {
+  width: 900px;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+  border: none;
 }
 
 

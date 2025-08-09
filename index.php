@@ -40,7 +40,7 @@
     </div>
 
     <div class="schedule_content">
-      <p class="schedule_title">スケジュール</p>
+      <p class="title">スケジュール</p>
       <div class="schedule_date_detail_content">
         <div class="schedule_date_content">
           <p class="active" id="date_btn_1">9月1日</p>
@@ -60,6 +60,10 @@
         </div>
       </div>
     </div>
+
+    <p class="title">アクセス</p>
+    <p class="address">〒771-1154 徳島県徳島市応神町東貞方面川淵</p>
+    <iframe src="https://maps.google.co.jp/maps?output=embed&q=吉野川北岸ソフトボール場"></iframe>
 
   </main>
   <footer>
