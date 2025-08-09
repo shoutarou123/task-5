@@ -1,6 +1,6 @@
 <ul class="menu_content" id="accordionMenu">
   <li>
-    <a class="menu" id="accordionPranLink" href="#">スケジュール</a>
+    <a class="menu" id="accordionPlanLink" href="#">スケジュール</a>
   </li>
   <li>
     <a class="menu" id="accordionAccessLink" href="#">アクセス</a>
@@ -17,13 +17,13 @@
     </a>
     <ul class="menu_content">
       <li>
-        <a class="menu" href="#">スケジュール</a>
+        <a class="menu" id="planLink" href="#">スケジュール</a>
       </li>
       <li>
-        <a class="menu" href="#">アクセス</a>
+        <a class="menu" id="accessLink" href="#">アクセス</a>
       </li>
       <li>
-        <a class="menu" href="#">席予約</a>
+        <a class="menu" id="subscriptionLink" href="#">席予約</a>
       </li>
     </ul>
     <div class="hamburger_content">

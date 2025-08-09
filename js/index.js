@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  $("#accordionMenu a").on("click", function () {
+    $("#accordionMenu").slideUp(300);
+    $(".hamburger_content").removeClass("open");
+  });
+
   const swiper = new Swiper(".swiper", {
     loop: true,
     centeredSlides: true,
@@ -27,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".swiper-button-next",
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
-    }
+    },
   });
 });

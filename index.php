@@ -40,7 +40,7 @@
     </div>
 
     <div class="schedule_content">
-      <p class="title">スケジュール</p>
+      <p class="title" id="schedule_title">スケジュール</p>
       <div class="schedule_date_detail_content">
         <div class="schedule_date_content">
           <p class="active" id="date_btn_1">9月1日</p>
@@ -59,11 +59,39 @@
           </p>
         </div>
       </div>
-    </div>
 
-    <p class="title">アクセス</p>
-    <p class="address">〒771-1154 徳島県徳島市応神町東貞方面川淵</p>
-    <iframe src="https://maps.google.co.jp/maps?output=embed&q=吉野川北岸ソフトボール場"></iframe>
+      <p class="title" id="access_title">アクセス</p>
+      <p class="address">〒771-1154 徳島県徳島市応神町東貞方面川淵</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3303.482660016973!2d134.51900637617905!3d34.108391264762766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5ZCJ6YeO5bed5YyX5bK444K944OV44OI44Oc44O844Or5aC0!5e0!3m2!1sja!2sjp!4v1754746314560!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <p class="title" id="subscription_title">席予約</p>
+      <form>
+        <label for="name">お名前<span>*必須</span></label>
+        <input class="required_form" type="text" name="name" placeholder="例）田中 太郎" />
+
+        <label for="position">席の場所<span>*必須</span></label>
+        <select class="required_form" name="position">
+          <option value="">---</option>
+          <option value="SS">SS席</option>
+          <option value="S">S席</option>
+          <option value="A">A席</option>
+          <option value="B">B席</option>
+          <option value="C">C席</option>
+        </select>
+
+        <label for="email">メールアドレス<span>*必須</span></label>
+        <input class="required_form" type="email" name="email" placeholder="例）abcd123@example.com" />
+        <span class="email_message">正しいメールアドレスを入力してください</span>
+
+
+        <label for="tel">電話番号<span class="optional_text">*任意</span></label>
+        <input class="tel_form" type="tel" name="tel" placeholder="例）09012345678" />
+        <span class="tel_message">正しい電話番号を入力してください</span>
+
+        <input class="submit_button" type="submit" value="送信" disabled />
+      </form>
+
+    </div>
 
   </main>
   <footer>
@@ -73,6 +101,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/js/index.js"></script>
   <script src="/js/scheduleBtn.js"></script>
+  <script src="/js/form-validate.js"></script>
+  <script src="/js/scroll.js"></script>
 </body>
 
 </html>
