@@ -13,7 +13,6 @@
   <?php include 'header.php'; ?>
   <main>
     <div class="swiper">
-
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="./img/slide_1.jpg" alt="花火画像">
@@ -33,8 +32,33 @@
       <div class="swiper-button-next">
         <img src="./img/slide-btn-next.svg">
       </div>
-
     </div>
+    </div>
+
+    <div class="catchphrase">
+      <p>今年も始まる<span>夏祭り</span></p>
+    </div>
+
+    <div class="schedule_content">
+      <p class="schedule_title">スケジュール</p>
+      <div class="schedule_date_detail_content">
+        <div class="schedule_date_content">
+          <p class="active" id="date_btn_1">9月1日</p>
+          <p id="date_btn_2">9月2日</p>
+          <p id="date_btn_3">9月3日</p>
+        </div>
+        <div class="schedule_detail_content">
+          <p class="schedule_detail" id="detail_1">
+            9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容9月1日の内容
+          </p>
+          <p class="schedule_detail hidden" id="detail_2">
+            9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容9月2日の内容
+          </p>
+          <p class="schedule_detail hidden" id="detail_3">
+            9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容9月3日の内容
+          </p>
+        </div>
+      </div>
     </div>
 
   </main>
@@ -44,6 +68,7 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/js/index.js"></script>
+  <script src="/js/scheduleBtn.js"></script>
 </body>
 
 </html>
