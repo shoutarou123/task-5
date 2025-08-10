@@ -1,3 +1,10 @@
+<?php session_start();
+$name = $_POST['name'] ?? $_SESSION['form']['name'] ?? '';
+$position = $_POST['position'] ?? $_SESSION['form']['position'] ?? '';
+$email = $_POST['email'] ?? $_SESSION['form']['email'] ?? '';
+$tel = $_POST['tel'] ?? $_SESSION['form']['tel'] ?? '';
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -66,13 +73,6 @@
       <p class="title" id="access_title">アクセス</p>
       <p class="address">〒771-1154 徳島県徳島市応神町東貞方面川淵</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3303.482660016973!2d134.51900637617905!3d34.108391264762766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5ZCJ6YeO5bed5YyX5bK444K944OV44OI44Oc44O844Or5aC0!5e0!3m2!1sja!2sjp!4v1754746314560!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <?php session_start();
-      $name = $_POST['name'] ?? $_SESSION['form']['name'] ?? '';
-      $position = $_POST['position'] ?? $_SESSION['form']['position'] ?? '';
-      $email = $_POST['email'] ?? $_SESSION['form']['email'] ?? '';
-      $tel = $_POST['tel'] ?? $_SESSION['form']['tel'] ?? '';
-      ?>
 
       <p class="title" id="subscription_title">席予約</p>
       <form class="form_sub" method="POST" action="checkPage.php">
