@@ -13,7 +13,7 @@ unset($_SESSION['form']);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>thanksPage</title>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,5 +29,5 @@ unset($_SESSION['form']);
   </main>
   <?php include 'footer.php'; ?>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/js/accordion.js"></script>
+  <script src="./js/accordion.js"></script>
 </body>

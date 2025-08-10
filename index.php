@@ -12,7 +12,7 @@ $tel = $_POST['tel'] ?? $_SESSION['form']['tel'] ?? '';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>top</title>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,11 +115,11 @@ $tel = $_POST['tel'] ?? $_SESSION['form']['tel'] ?? '';
   <?php include 'footer.php'; ?>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/js/accordion.js"></script>
-  <script src="/js/form-validate.js"></script>
-  <script src="/js/scheduleBtn.js"></script>
-  <script src="/js/scroll.js"></script>
-  <script src="/js/swiper.js"></script>
+  <script src="./js/accordion.js"></script>
+  <script src="./js/form-validate.js"></script>
+  <script src="./js/scheduleBtn.js"></script>
+  <script src="./js/scroll.js"></script>
+  <script src="./js/swiper.js"></script>
 </body>
 
 </html>

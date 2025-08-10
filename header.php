@@ -12,8 +12,8 @@
 
 <header>
   <div class="header_content">
-    <a href="/">
-      <img src="/img/logo.png" />
+    <a href="./index.php">
+      <img src="./img/logo.png" />
     </a>
     <ul class="menu_content">
       <li>
