@@ -7,6 +7,9 @@
   <title>top</title>
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Protest+Strike&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -72,7 +75,7 @@
       ?>
 
       <p class="title" id="subscription_title">席予約</p>
-      <form method="POST" action="checkPage.php">
+      <form class="form_sub" method="POST" action="checkPage.php">
         <label for="name">お名前<span>*必須</span></label>
         <input class="required_form" type="text" name="name" placeholder="例）田中 太郎"
           value="<?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?>" />
@@ -106,17 +109,17 @@
 
         <input class="submit_button" type="submit" value="送信" disabled />
       </form>
-
     </div>
 
   </main>
   <?php include 'footer.php'; ?>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/js/index.js"></script>
-  <script src="/js/scheduleBtn.js"></script>
+  <script src="/js/accordion.js"></script>
   <script src="/js/form-validate.js"></script>
+  <script src="/js/scheduleBtn.js"></script>
   <script src="/js/scroll.js"></script>
+  <script src="/js/swiper.js"></script>
 </body>
 
 </html>
