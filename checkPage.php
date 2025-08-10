@@ -16,7 +16,7 @@
     </head>
 
     <body>
-      <?php include 'header.php'; ?>
+      <?php include 'subHeader.php'; ?>
       <main>
         <div class="check_content">
           <p class="check_title">席予約確認</p>
@@ -61,4 +61,6 @@
         </div>
       </main>
       <?php include 'footer.php'; ?>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="/js/accordion.js"></script>
     </body>

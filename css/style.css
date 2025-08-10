@@ -4,7 +4,7 @@
 }
 
 html {
-  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 html,
@@ -369,6 +369,13 @@ form input[type="submit"] {
   font-weight: bold;
   font-size: large;
   text-align: center;
+}
+
+/* 画面遷移時の調整 */
+#schedule_title,
+#access_title,
+#subscription_title {
+  scroll-margin-top: 80px;
 }
 
 @media screen and (max-width: 950px) {
