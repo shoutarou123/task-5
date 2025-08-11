@@ -21,28 +21,34 @@
         <div class="check_content">
           <p class="check_title">席予約確認</p>
           <div class="flex">
-            <div class="gap">
-              <label class="check_label">お名前</label>
-              <label class="check_label">希望席</label>
-              <label class="check_label">メールアドレス</label>
-              <label class="check_label">電話番号</label>
-            </div>
             <form class="gap" method="POST" action="index.php#subscription_title">
-              <div class="input_detail">
-                <?php echo htmlspecialchars($_SESSION['form']['name'] ?? '', ENT_QUOTES, 'UTF-8'); ?>
-                <input type="hidden" name="name" value="<?php echo htmlspecialchars($_SESSION['form']['name'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+              <div class="detail_content">
+                <label class="check_label">お名前</label>
+                <div class="input_detail">
+                  <?php echo htmlspecialchars($_SESSION['form']['name'] ?? '', ENT_QUOTES, 'UTF-8'); ?>
+                  <input type="hidden" name="name" value="<?php echo htmlspecialchars($_SESSION['form']['name'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                </div>
               </div>
-              <div class="input_detail">
-                <?php echo htmlspecialchars($_SESSION['form']['position'] ?? '', ENT_QUOTES, 'UTF-8'); ?>
-                <input type="hidden" name="position" value="<?php echo htmlspecialchars($_SESSION['form']['position'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+              <div class="detail_content">
+                <label class="check_label">希望席</label>
+                <div class="input_detail">
+                  <?php echo htmlspecialchars($_SESSION['form']['position'] ?? '', ENT_QUOTES, 'UTF-8'); ?>
+                  <input type="hidden" name="position" value="<?php echo htmlspecialchars($_SESSION['form']['position'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                </div>
               </div>
-              <div class="input_detail">
-                <?php echo htmlspecialchars($_SESSION['form']['email'] ?? '', ENT_QUOTES, 'UTF-8'); ?>
-                <input type="hidden" name="email" value="<?php echo htmlspecialchars($_SESSION['form']['email'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+              <div class="detail_content">
+                <label class="check_label">メールアドレス</label>
+                <div class="input_detail">
+                  <?php echo htmlspecialchars($_SESSION['form']['email'] ?? '', ENT_QUOTES, 'UTF-8'); ?>
+                  <input type="hidden" name="email" value="<?php echo htmlspecialchars($_SESSION['form']['email'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                </div>
               </div>
-              <div class="input_detail">
-                <?php echo htmlspecialchars($_SESSION['form']['tel'] ?? '', ENT_QUOTES, 'UTF-8'); ?>
-                <input type="hidden" name="tel" value="<?php echo htmlspecialchars($_SESSION['form']['tel'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+              <div class="detail_content">
+                <label class="check_label">電話番号</label>
+                <div class="input_detail">
+                  <?php echo htmlspecialchars($_SESSION['form']['tel'] ?? '', ENT_QUOTES, 'UTF-8'); ?>
+                  <input type="hidden" name="tel" value="<?php echo htmlspecialchars($_SESSION['form']['tel'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                </div>
               </div>
           </div>
 
